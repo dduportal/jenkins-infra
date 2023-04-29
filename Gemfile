@@ -7,7 +7,7 @@ gem 'parallel_tests'
 # Needed for integration tests
 gem 'beaker'
 gem 'puppet-lint'
-gem 'puppet', '6.28.0' # Version of the puppetmaster in production
+gem 'puppet', '7.24.0' # Version of the puppetmaster in production
 gem 'r10k'
 gem 'puppetlabs_spec_helper'
 gem 'pry'

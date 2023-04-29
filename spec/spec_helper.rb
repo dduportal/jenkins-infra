@@ -55,7 +55,7 @@ RSpec.configure do |c|
       :count => 2,
     },
     :ruby => {
-      :version => '2.6.10',
+      :version => '2.7.7',
     },
     ####
     # Legacy facts, hidden by default from default facter output.
@@ -73,10 +73,11 @@ RSpec.configure do |c|
     # Needed for conditionals like:
     # <https://github.com/saz/puppet-sudo/blob/v3.0.6/manifests/init.pp#L147>
     # Get versions matrix at https://puppet.com/docs/puppet/7/platform_lifecycle.html#about_agent-platform-releases
-    :puppetversion => '6.28.0',
-    :facterversion => '3.14.24', # Must be the version installed with the puppet-agent package
-    :pe_version => '6.27.1',
-    :pe_server_version => '2019.8.11',
+    :puppetversion => '7.24.0',
+    # https://www.puppet.com/docs/puppet/7/platform_lifecycle.html#about_agent-component-version-numbers
+    :facterversion => '4.3.1',
+    :pe_version => '7.24.0',
+    :pe_server_version => '2021.7.2', # LTS
     :apt_update_last_success => '1657469796',
     :vagrant => false,
     :staging_http_get => 'curl',

@@ -60,7 +60,7 @@ RUN chmod 600 /home/vagrant/.ssh/authorized_keys \
 # Install the puppet agent
 # hadolint ignore=DL3008,DL3059
 RUN package_path=/tmp/puppetrelease.deb \
-  && curl --silent --show-error --location --output "${package_path}" "http://apt.puppetlabs.com/puppet6-release-$(grep UBUNTU_CODENAME /etc/os-release | cut -d= -f2).deb" \
+  && curl --silent --show-error --location --output "${package_path}" "http://apt.puppetlabs.com/puppet7-release-$(grep UBUNTU_CODENAME /etc/os-release | cut -d= -f2).deb" \
   && dpkg -i "${package_path}" \
   && rm -f /tmp/puppetrelease.deb \
   && apt-get update --quiet \
