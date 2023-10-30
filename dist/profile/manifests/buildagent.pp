@@ -133,6 +133,7 @@ class profile::buildagent (
         name => $jdk_name,
         major_version => regsubst($jdk_name, 'jdk', '').regsubst($jdk_name, 'jdk-', ''),
         version => $jdk_version,
+        cpu_arch => $facts['os']['architecture'],
       }
       $java_dir = "/opt/jdk-${$jdk['major_version']}"
 
